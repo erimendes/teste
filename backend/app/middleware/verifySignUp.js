@@ -15,6 +15,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
       });
       return;
     }
+
     // Email
     User.findOne({
       where: {
@@ -27,6 +28,7 @@ checkDuplicateUsernameOrEmail = (req, res, next) => {
         });
         return;
       }
+
       next();
     });
   });
@@ -43,6 +45,7 @@ checkRolesExisted = (req, res, next) => {
       }
     }
   }
+  
   next();
 };
 
