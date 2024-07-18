@@ -19,6 +19,7 @@ const AuthService = {
   },
 
   register: (username: string, email: string, password: string) => {
+    console.log(username)
     return api.post('/auth/signup', {
       username,
       email,

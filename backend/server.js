@@ -19,7 +19,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 var corsOptions = {
-  origin: 'http://127.0.0.1:5174',
+  origin: 'http://localhost:5173',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'x-access-token'],
 };
@@ -45,6 +45,11 @@ db.sequelize.sync({force: true}).then(() => {
 
 function initial() {
   Role.create({
+    id: 3,
+    name: "admin"
+  });
+  
+  Role.create({
     id: 1,
     name: "user"
   });
@@ -53,11 +58,7 @@ function initial() {
     id: 2,
     name: "moderator"
   });
- 
-  Role.create({
-    id: 3,
-    name: "admin"
-  });
+
 }
 
 // routes
