@@ -9,6 +9,7 @@ import Profile from './components/profile.component';
 import BoardUser from './components/board-user.component';
 import BoardModerator from './components/board-moderator.component';
 import BoardAdmin from './components/board-admin.component';
+import UploadForm from './components/UploadForm';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <NavBar />
       <div className='container mt-3'>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<UploadForm />} />
           <Route path='/home' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
