@@ -4,6 +4,9 @@ O projeto é um aplicativo de Login e Registro desenvolvido em React com Typescr
 
 <img src="./src/images/login.png" alt="login" width="550"/>
 
+## Schema para mongo em Prisma
+https://authjs.dev/getting-started/adapters/prisma
+
 Recursos:
 
  - Fluxo de autenticação JWT para inscrição e login do usuário.
