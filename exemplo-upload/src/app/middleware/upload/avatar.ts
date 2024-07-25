@@ -1,5 +1,5 @@
-import multer from "multer"; 
-import path from "path"; 
+import multer from "multer";
+import path from "path";
 import fs from "fs";
 import mime from "mime-types";
 import { Request } from "express";
@@ -7,7 +7,7 @@ import { FileFilterCallback } from "multer";
 
 class UploadAvatar {
   // Pasta para onde será feito o Upload
-  private URL: string = path.join(__dirname, 'upload'); 
+  private URL: string = path.join(__dirname, "../../../upload");
 
   constructor() {}
 
